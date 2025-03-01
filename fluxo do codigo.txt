@@ -1,0 +1,5 @@
+"Primeiro, fazemos uma requisição para a API. Em seguida, r armazena a resposta dessa requisição e a exibimos com print(). Depois, transformamos essa resposta em uma lista usando .json() e a salvamos em submission_ids. Criamos uma lista vazia que será usada depois e fazemos um loop percorrendo os 5 primeiros índices.
+Aí, modificamos a URL para pegar os detalhes de cada ID, fazemos uma nova requisição e a atribuímos a r. Em seguida, exibimos se a requisição foi bem-sucedida ou não e armazenamos a resposta em response_dict.
+Depois, criamos um dicionário (submission_dict) que armazena o título, o link e o número de comentários. Usamos .append() para adicionar esse dicionário à lista vazia criada.
+Por fim, ordenamos essa lista pelo número de comentários usando sorted() e a função itemgetter, com o parâmetro reverse=True para a ordem decrescente.
+No final, usamos um loop for para printar os dicionários dentro da lista submission_dicts, exibindo o título, o link e o número de comentários de cada um dos 5 artigos mais comentados, em ordem decrescente."
